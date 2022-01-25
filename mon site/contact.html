@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>contact</title>
+	<style>
+body {
+      background-image: url('image2.png');
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      font-family: Montserrat, "sans-serif";
+      display: flex;
+      justify-content: center;
+      color: #303030; 
+     }
+    #slider {
+			overflow: hidden;
+
+		}
+		#slider figure{
+			position: relative;
+			width: 500%;
+			margin: 00;
+			left: 0;
+			animation: 18s slider infinite;
+		}
+		#slider figure img{
+			float: left;
+			width: 20%;
+			height: 900px;
+
+		}
+		@keyframes slider{
+			0% {
+				left: 0;
+			}
+			20% {
+				left: 0;
+			}
+			25% {
+				left: -100%;
+			}
+			45% {
+				left: -100% ;
+			}
+			50% {
+				left: -200% ;
+			}
+			70% {
+				left: -200% ;
+			}
+			75%  {
+				left: -300;
+			}
+			95% {
+				left: -300;
+			}
+			100% {
+				left: -400;
+			}
+          
+
+		}
+	    		nav{
+			background: #adeee3;
+			background-size: 100%;
+			box-shadow: 0px 0px 10px #000; 
+			border-bottom: 2px solid white ;
+		}
+		nav ul{
+			float: center;
+			margin-right:25px ;
+			
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 20px;
+			margin:20px;
+			text-align: center;
+			align-content: center;
+			padding-left: 20px;
+		}
+		nav ul li a{
+			color: #303030;
+			font-size: 15px;
+			font-family:  Montserrat, "sans-serif";
+			text-align: left;
+			text-decoration: none;
+			
+
+		}
+		*{
+           	box-sizing:border-box;
+           }
+
+.contactez-nous {
+width: 700px;
+border: 1px solid;
+border-radius: 8px;
+padding: 0 10px 0 40px;
+background-image:  url('image2.png');
+}
+
+.contactez-nous > h1 {
+font-weight: 500;
+}
+
+.contactez-nous > p {
+font-weight: 300;
+}
+
+form div {
+width: 100%;
+display: flex;
+flex-direction: column;
+min-height: 23px;
+margin-top: 15px;
+}
+
+form div > label {
+margin-bottom: 7px;
+font-weight: 600;
+}
+
+form div > input, form div > select, form div > textarea {
+background: #adeee3;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: Montserrat, "sans-serif";
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+form div > input, form div > select {
+height: 50px;
+padding-left: 10px;
+}
+
+form div > select {
+appearance: none;
+background-size: 15px;
+background-position: right 10px top 50%;
+background-repeat: no-repeat;
+}
+
+form div > textarea {
+height: 195px;
+padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+color: white;
+}
+
+form div > select:invalid {
+color: white;
+}
+
+form div > select option {
+background: white;
+color: #303030;
+}
+
+form div:last-child {
+align-items:center;
+margin-top: 20px;
+}
+
+form button {
+width: 450px;
+max-width: 500px;
+height: 60px;
+font-weight: 700;
+font-size: 28px;
+background: white;
+border: rgba(48, 48, 48, 0.5) solid 1px;
+border-radius: 5px;
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+color: #303030;
+}
+	</style>
+</head>
+<body>
+	
+     &nbsp;
+	<nav>
+		<ul>
+		<li><a href="devoir.html">PRÉSENTATION</a></li>
+		<li><a href="a visiter.html">À VISITER !</a></li>
+        <li><a href="his.html">HISTOIRE</a></li>
+        <li><a href="galerie.html">GALERIE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	</nav>
+	<hr>
+	&nbsp;
+	<div id="slider">
+		<figure>
+			<img src="img/image.jpeg" alt="image"height="500" width="500">
+			<img src="img/image2.jpg" alt="image"height="500" width="500">
+			<img src="img/image3.jpeg" alt="image"height="500" width="500">
+			<img src="img/image4.jpg" alt="image"height="500" width="500">
+			<img src="img/image5.jpg" alt="image"height="500" width="500">  
+
+
+		</figure>
+	</div>
+
+<div class="contactez-nous">
+<h1>Contactez-nous</h1>
+<p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+<form action="/page-traitement-donnees" method="post">
+<div>
+<label for="nom">Votre nom</label>
+<input type="text" id="nom" name="nom" placeholder="Mehdi" required>
+</div>
+<div>
+<label for="email">Votre e-mail</label>
+<input type="email" id="email" name="email" placeholder="mehdibzn@live.com" required>
+</div>
+<div>
+<label for="sujet">Votre numéro de téléphone</label>
+<input type="sujet" name="sujet" placeholder="05.....">
+<label for="Votre site web">Le lien de votre site</label>
+<input type="site" name="site" placeholder="WWW.#####.COM">
+</div>
+<div>
+<label for="message">Votre message</label>
+<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+</div>
+<div>
+<button type="submit">Envoyer mon message</button>
+</div>
+</form>
+</div>
+</body>
+</html>

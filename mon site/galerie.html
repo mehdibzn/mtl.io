@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>galerie</title>
+	<style>
+			body{
+			background-image: url('image2.png');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
+		}
+
+	
+		#slider {
+			overflow: hidden;
+
+		}
+		#slider figure{
+			position: relative;
+			width: 500%;
+			margin: 00;
+			left: 0;
+			animation: 10s slider infinite;
+		}
+		#slider figure img{
+			float: left;
+			width: 20%;
+			height: 400px;
+
+		}
+		@keyframes slider{
+			0% {
+				left: 0;
+			}
+			20% {
+				left: 0;
+			}
+			25% {
+				left: -100%;
+			}
+			45% {
+				left: -100% ;
+			}
+			50% {
+				left: -200% ;
+			}
+			70% {
+				left: -200% ;
+			}
+			75%  {
+				left: -300;
+			}
+			95% {
+				left: -300;
+			}
+			100% {
+				left: -400;
+			}
+          
+
+		}
+		nav{
+			background: #adeee3;
+			height: 70px;
+			width: 100%;
+			box-shadow: 0px 0px 5px #000; 
+			border-bottom: 2px solid white ;
+		}
+		}
+		nav ul{
+			float: center;
+			margin-right:25px ;
+			
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 20px;
+			margin:20px;
+			text-align: center;
+			align-content: center;
+			padding-left: 20px;
+		}
+		nav ul li a{
+			color: #303030;
+			font-size: 25px;
+			font-family:  Montserrat, "sans-serif";
+			text-align: center;
+			text-decoration: none;
+			
+
+		}
+		h1{
+			font-family: Montserrat, "sans-serif";
+            display: flex;
+            justify-content: center;
+            color: #303030; 
+           }	
+           *{
+           	box-sizing:border-box;
+           }
+		
+ 		.container{
+			
+			margin: auto;
+			background:transparent ;
+			overflow: auto;
+			border-radius: 5px;
+			width: 30%;
+			box-sizing: border-box;
+		}
+		.con2{
+			display: flex;
+		}
+		.gallery{
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: center;
+			width: 95%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		.gallery img{
+			width: 100%;
+			height: 190px;
+			border-radius: 5px;
+		}
+		.desc{
+			padding: 15px;
+			text-align: center;
+			font-family: Montserrat, "sans-serif";
+		}
+		.desc a{
+			text-decoration: none;
+		}
+		 
+        #p{ 
+			background: #adeee3;
+			height: 30px;
+			width: 100%;
+		}		
+		#nav{
+        	color: #303030;
+			font-size: 15px;
+			font-family: Montserrat, "sans-serif";
+			text-align: center;
+			text-decoration: none;
+		}
+		
+	</style>
+</head>
+<body>
+		<div id="slider">
+		<figure>
+			<img src="img/image.jpeg" alt="image"height="500" width="500">
+			<img src="img/image2.jpg" alt="image"height="500" width="500">
+			<img src="img/image3.jpeg" alt="image"height="500" width="500">
+			<img src="img/image4.jpg" alt="image"height="500" width="500">
+			<img src="img/image5.jpg" alt="image"height="500" width="500">  
+
+
+		</figure>
+	</div>
+	<nav>
+		<ul>
+		<li><a href="devoir.html">PRÉSENTATION</a></li>
+		<li><a href="a visiter.html">À VISITER !</a></li>
+        <li><a href="his.html">HISTOIRE</a></li>
+        <li><a href="galerie.html">GALERIE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	</nav>
+	<div>
+	<div class="con2">	
+	<div class="container">
+		<div class="gallery">
+			<img src="notredame.jpg" alt="image"height="500" width="500">
+			<div class="desc" ><a href="basilique.html"> Basilique Notre-Dame </a> </div>
+			
+		</div>
+	</div>
+		<div class="container">
+		<div class="gallery">
+			<img src="mcgill.jpg">
+			<div class="desc"><a href="mcgill.html"> Université De McGill </a> </div>
+			
+		</div>
+	</div>	
+		<div class="container">
+		<div class="gallery">
+			<img src="jardin.jpg">
+			<div class="desc" id=""> <a href="jardin.html"> Jardin Botanique </a> </div>
+			
+		</div>
+	</div>
+</div>
+	  <div class="con2">	
+		<div class="container">
+		<div class="gallery">
+			<img src="biosphere.jpg">
+			<div class="desc"><a href="biosphere.html"> La Biosphère </a></div>
+	
+		</div>
+	</div>
+		<div class="container">
+		<div class="gallery">
+			<img src="habitat.jpg">
+			<div class="desc"><a href="habitat.html"> Habitat 67 </a></div>
+			
+		</div>
+	</div>	
+		<div class="container">
+		<div class="gallery">
+			<img src="chinatown.jpg">
+			<div class="desc"><a href="chinatown.html"> ChinaTown </a></div>
+			
+		</div>
+	</div>
+   </div>
+
+	<hr>
+	<nav id="p" >
+	<p id="nav">---COPYRIGHT---TOUT DROIT RÉSERVÉ.</p>
+    </nav>
+
+</body>
+</html>
